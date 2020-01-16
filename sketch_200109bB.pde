@@ -170,6 +170,10 @@ void draw() {
       MouseToolSelect = false;
     }
 
+    fill(255);
+    rect(200, 180, width - (width/6)-(width/24), height - (height/4)-(height/24));
+    noFill();
+
     if (DarkMode) {
       if (BrushToolSelect) {
         BrushToolColour = color(0);
@@ -182,7 +186,7 @@ void draw() {
         RectangleSelectToolColour = color(60);
       }
       if (mouseX >= 72.5 && mouseY >= 100) {
-        stroke(255);
+        stroke(0);
         noFill();
         ellipse(mouseX, mouseY, 50, 50);
         noCursor();
